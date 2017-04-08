@@ -1,0 +1,39 @@
+package Assignment43;
+
+public class Assignment43 {
+
+	public static void main(String[] args) {
+		A a=new A();
+		a.test();
+		a.test2();
+		B b=new B();
+		b.test();
+		C c=new C();
+		c.test();
+	}
+
+}
+class A extends B{
+	void test(){
+	int a=10;
+	System.out.println(" "+a);
+	}
+	void test2(){
+		super.test();
+	}
+	
+}
+class B extends C{
+	void test(){
+		int b=20;
+		System.out.println(" "+b);
+	}
+}
+class C {
+	void test(){
+		int c=50;
+		System.out.println(" "+c);
+	}
+}
+
+
